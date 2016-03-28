@@ -2,6 +2,10 @@ const stationsEndpoint = 'https://crossorigin.me/https://www.velo-antwerpen.be/a
 
 module.exports = () => {
   return (dispatch) => {
+    dispatch({
+      type: 'FETCHING_STATIONS'
+    });
+    
     fetch(stationsEndpoint)
       .then(r => r.json())
       .then(stations => dispatch({

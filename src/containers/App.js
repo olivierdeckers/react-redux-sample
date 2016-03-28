@@ -40,7 +40,9 @@ function mapDispatchToProps(dispatch) {
   /* Populated by react-webpack-redux:action */
   const actions = {
     UpdateName: require('../actions/UpdateName.js'),
-    FetchStations: require('../actions/FetchStations.js')
+    FetchStations: require('../actions/FetchStations.js'),
+    UpdateStationFilter: require('../actions/UpdateStationFilter.js'),
+    ToggleAllStations: require('../actions/ToggleAllStations.js')
   };
   const actionMap = { actions: bindActionCreators(actions, dispatch) };
   return actionMap;
