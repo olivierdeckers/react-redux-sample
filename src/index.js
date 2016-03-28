@@ -13,7 +13,3 @@ render(
   </Provider>,
   document.getElementById('app')
 );
-
-// <Provider store={store}>
-  // <App />,
-// </Provider>,
